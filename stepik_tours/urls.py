@@ -18,9 +18,10 @@ from django.urls import path
 from tours import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", views.main_view),
+    path("index/", views.main_view),
     path("departure", views.departure_view),
-    path("tour/<int:tour_id>/", views.tour_view),
+    # path("tour/", views.tour_main_view),
+    path("tour/<int:tour_id>/", views.tour_view)
 ]
 # path("/departure/<str:departure>/", views.departure_view),
 # path("/tour/<int:tour_id>/", views.tour_view),
