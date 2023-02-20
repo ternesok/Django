@@ -52,7 +52,9 @@
           <div class="card-body">
             <h2 class="h5 card-title">Hotel title</h2>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="http://127.0.0.1:8000/tour/{{ tour_id[] }}" class="btn btn-sm btn-primary">Подробнее</a>
+
+            <a href="http://127.0.0.1:8000/tour/{{ data.tours.keys|join:","|slice:"0:1" }}" class="btn btn-sm btn-primary">Подробнее    </a>
+
           </div>
         </div>
       </div>
